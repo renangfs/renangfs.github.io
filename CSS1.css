@@ -1,0 +1,144 @@
+/* Importe a fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif; /* Use Montserrat como fonte principal */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Definir a altura mínima da página para preencher a tela inteira */
+  background-image: linear-gradient(to right top, #f9ecbd, #daf1c5, #bef3d7, #abf1ed, #aaecff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinhar itens ao topo */
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.form-container {
+  margin-top: 10px;
+  flex: 1;
+  max-width: 400px;
+  margin-right: 1px; /* Espaço entre os contêineres */
+  padding: 31px;
+  border: 0px solid #e6e5e5;
+  border-radius: 5px;
+  background-color: rgba(178, 223, 184, 0.7);
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 19px;
+  color: #070707; /* Cor do texto atualizada */
+
+  padding: 1px;
+  margin-top: 0; /* Remover margem superior padrão do h1 */
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  font-size: 20px;
+  color: #222;
+}
+
+.form-container input,
+.form-container select {
+  padding: 1px;
+  margin-bottom: 20px;
+  border: 0px solid #f69400;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.form-container button {
+  padding: 15px 25px;
+  background-color: #eba204;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s; /* Adicionando transição ao hover */
+}
+
+.form-container button:hover {
+  background-color: #d49607; /* Cor do botão no hover */
+}
+
+.availability-list {
+  margin-top: 10px;
+  flex: 1;
+  max-width: 390px;
+  margin-left: 5px; /* Espaço entre os contêineres */
+  padding: 10px;
+  border: 0px solid #ffffff;
+  border-radius: 5px;
+  background-color: rgba(178, 223, 184, 0.7);
+}
+
+.availability-list h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 1px;
+}
+
+.availability-list ul {
+  list-style: none;
+  padding:1px;
+  text-align: center;
+
+  justify-content: center; /* Centralizar os horários */
+}
+
+.availability-list li {
+  font-size: 18px;
+  color: #222;
+  margin: 1px;
+}
+
+/* Estilo para o campo de data e botão de pesquisa */
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-container label {
+  display: block;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.search-container input[type="date"] {
+  padding: 10px;
+  border: 2px solid #e19510;
+  border-radius: 5px;
+  font-size: 20px;
+  outline: none; /* Remover a borda de foco ao clicar no campo */
+}
+
+.search-container button {
+  margin-top: 10px;
+  padding: 15px 25px;
+  background-color: #eba204;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s; /* Adicionando transição ao hover */
+}
+
+.search-container button:hover {
+  background-color: #e38425; /* Cor do botão no hover */
+}

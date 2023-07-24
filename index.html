@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Continuação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS1.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Agendar</h1>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+       
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+  
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required min="<?php echo date('Y-m-d'); ?>">
+        <!-- Adicionamos o atributo min com o valor do dia atual em formato yyyy-mm-dd -->
+
+
+
+        <label for="hora">Hora:</label>
+        <select id="hora" name="hora" required>
+          <option value="">Selecione um horário</option>
+          <option value="10:00">10h</option>
+          <option value="11:00">11h</option>
+          <option value="12:00">12h</option>
+          <option value="13:00">13h</option>
+          <option value="14:00">14h</option>
+          <option value="15:00">15h</option>
+          <option value="16:00">16h</option>
+          <option value="17:00">17h</option>
+          <option value="18:00">18h</option>
+          <option value="19:00">19h</option>
+          <option value="20:00">20h</option>
+          <option value="21:00">21h</option>
+        </select>
+    
+
+        <button type="submit">Continuar</button>
+      </form>
+    </div>
+    <!-- Nova seção para a lista de disponibilidade -->
+    <div class="availability-list">
+      <h2>Disponibilidade dos Horários</h2>
+      <ul>
+        <li>10:00 - Disponível</li>
+        <li>11:00 - Disponível</li>
+        <li>12:00 - Disponível</li>
+        <li>13:00 - Disponível</li>
+        <li>14:00 - Disponível</li>
+        <li>15:00 - Disponível</li>
+        <li>16:00 - Disponível</li>
+        <li>17:00 - Disponível</li>
+        <li>18:00 - Disponível</li>
+        <li>19:00 - Disponível</li>
+        <li>20:00 - Disponível</li>
+        <li>21:00 - Disponível</li>
+        <!-- Adicione aqui a disponibilidade para cada horário -->
+      </ul>
+
+      <!-- Campo de data e botão de pesquisa -->
+      <div class="search-container">
+        <label for="search-date">Selecione uma data:</label>
+        <input type="date" id="search-date" name="search-date">
+        <button type="submit">Pesquisar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
